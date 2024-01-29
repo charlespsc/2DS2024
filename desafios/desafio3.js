@@ -1,4 +1,3 @@
-
 let qtdNumeros = prompt('Digite a quantidade de números para o cálculo da média:');
 let soma = 0;
 let contador = qtdNumeros;
