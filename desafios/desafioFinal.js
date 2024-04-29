@@ -1,7 +1,8 @@
 /* Desafios finais
-1 - Crie um programa que utilize o console.log para exibir uma mensagem de boas-vindas.*/
-alert("Seja bem vindo ao nosso site!")
-
+1 - Crie um programa que utilize o console.log para exibir uma mensagem de boas-vindas.
+EU: alert("Seja bem vindo ao nosso site!")
+Corrigido:*/
+console.log('Boas vindas');
 
 /*
 2 - Crie uma variável chamada "nome" e atribua a ela o seu nome. 
@@ -60,9 +61,10 @@ if (idade >= 18) {
 
 /*
 8 - Crie uma variável "numero" e peça um valor com prompt verifique se é positivo, negativo ou zero. 
-    Use if-else para imprimir a respectiva mensagem.*/
-
+    Use if-else para imprimir a respectiva mensagem.
+EU: 
 let numero = prompt("Digite um número:")
+
 if (numero == 0) {
     console.log(`O número ${numero} é zero!`)
 } else if (numero > 0) {
@@ -70,15 +72,30 @@ if (numero == 0) {
 } else {
     console.log(`O número ${numero} é negativo!`)
 }
+ Corrigido:*/
+ var numero = parseFloat(prompt("Digite um número:"));
+
+ if (numero > 0) {
+     console.log("O número é positivo.");
+ } else if (numero < 0) {
+     console.log("O número é negativo.");
+ } else {
+     console.log("O número é zero.");
+ }
 
 /*
-9 - Use um loop while para imprimir os números de 1 a 10 no console.*/
-
+9 - Use um loop while para imprimir os números de 1 a 10 no console.
+EU: 
 var i = 1;
-
 while (i < 11) {
     console.log(`O numero é ${i}`)
   i++;
+}
+Corrigido:*/
+let i = 1;
+while (i <= 10) {
+    console.log(i);
+    i++;
 }
 
 /*
@@ -106,5 +123,5 @@ console.log(`O número gerado aleatório é ${numeroAleatorio2}`);
 
 /*
 13 - Use o Math.random para gerar um número inteiro entre 1 e 1000 e exiba esse número no console.*/
-let numeroAleatorio3 = parseInt(Math.random() * 100 + 1);
+let numeroAleatorio3 = parseInt(Math.random() * 1000 + 1);
 console.log(`O número gerado aleatório é ${numeroAleatorio3}`);
