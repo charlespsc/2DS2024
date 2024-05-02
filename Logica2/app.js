@@ -13,6 +13,6 @@ function verificarChute() {
     console.log(chute == numeroSecreto);
 }
 
-//function gerarNumeroAleatorio() {
-//    return parseInt(Math.random() * 10 + 1);
-//}
+function gerarNumeroAleatorio() {
+    return parseInt(Math.random() * 10 + 1);
+}
